@@ -1,0 +1,73 @@
+<header>
+  <div class="links">
+    <div class="logo">
+      <img src="../../../../assets/logo-page.webp" alt="Logo" />
+    </div>
+
+    <nav class="pc">
+      <p class="link">
+        <a href="#hero">Home</a>
+      </p>
+      <p class="link">
+        <a href="#wgpt3">What is GPT?</a>
+      </p>
+      <p class="link">
+        <a class="#features">Open AI</a>
+      </p>
+      <p class="link">
+        <a class="#posibility">Case Studies</a>
+      </p>
+      <p class="link">
+        <a>Library</a>
+      </p>
+    </nav>
+  </div>
+  <div class="buttons">
+    <button type="button"><p>Sign In</p></button>
+    <button type="button" class="orange-button"><p>Sign Up</p></button>
+  </div>
+
+  <div class="menu">
+    @if(!toggleMenu){
+    <open-bar-icon
+      (click)="toggleMenu = !toggleMenu"
+      color="#fff"
+      width="45"
+      height="45"
+    ></open-bar-icon>
+    } @else {
+    <close-icon
+      (click)="toggleMenu = !toggleMenu"
+      color="#fff"
+      width="45"
+      height="45"
+    ></close-icon>
+    } @if(toggleMenu){
+    <div class="menu-container scale-up-center">
+      <div class="menu-links">
+        <nav class="mobile">
+          <p class="link">
+            <a>Home</a>
+          </p>
+          <p class="link">
+            <a>What is GPT?</a>
+          </p>
+          <p class="link">
+            <a>Open AI</a>
+          </p>
+          <p class="link">
+            <a>Case Studies</a>
+          </p>
+          <p class="link">
+            <a>Library</a>
+          </p>
+        </nav>
+      </div>
+      <div class="buttons mobile">
+        <p>Sign In</p>
+        <button type="button" class="orange-button"><p>Sign Up</p></button>
+      </div>
+    </div>
+    }
+  </div>
+</header>

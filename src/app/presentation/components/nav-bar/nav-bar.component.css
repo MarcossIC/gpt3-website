@@ -1,0 +1,146 @@
+header {
+  @apply w-full flex justify-between items-center text-white;
+
+  padding: 2rem 6rem;
+}
+
+header p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 25px;
+  direction: ltr;
+  margin: 0 1rem;
+}
+header p.link {
+  opacity: 0.8;
+}
+header p.link:hover {
+  opacity: 1;
+}
+
+header a,
+header button,
+header .logo {
+  cursor: pointer;
+}
+
+header .links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav {
+  @apply flex flex-row;
+
+  font-size: 1.125rem;
+}
+
+
+
+
+
+header .logo {
+  margin-inline-end: 2rem;
+}
+
+header .logo img {
+  width: 62.56px;
+  height: 16.02px;
+}
+
+header .buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+header .buttons button {
+  padding: 0.5rem 2rem;
+  border: 0;
+  outline: none;
+}
+
+.menu {
+  display: none;
+}
+.menu-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  margin-block-start: 1rem;
+  max-width: 210px;
+  border-radius: 0.315rem;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+    0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+}
+
+header .menu-container p {
+  margin: 1rem 0;
+}
+header nav.mobile {
+  flex-direction: column;
+}
+
+
+@media only screen and (max-width: 1075px) {
+  header nav.pc {
+    display: none;
+  }
+  header .buttons {
+    display: none;
+  }
+  header .buttons.mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  header .buttons.mobile button {
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header .buttons.mobile p {
+    margin-inline-start: auto;
+  }
+
+  header .menu {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  nav {
+    font-size: 1.25rem;
+    margin-inline: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1075px) {
+  nav {
+    font-size: .95rem;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  header {
+    padding-inline: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px){
+  header {
+      padding: 4rem 2rem;
+  }
+}

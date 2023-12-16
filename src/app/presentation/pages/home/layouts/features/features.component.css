@@ -1,0 +1,118 @@
+section {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+section > div.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+section .features-title {
+  flex: 1 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  margin-inline-end: 5rem;
+}
+
+.features-title h2 {
+  font-family: var(--font-family);
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.8125rem;
+  max-width: 420px;
+  text-wrap: pretty;
+}
+
+.features-title h4 {
+  font-family: var(--font-family);
+  color: rgba(255, 138, 113, 1);
+  line-height: 1.875rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  margin-block-start: 1.25rem;
+  word-spacing: 4px;
+  letter-spacing: 0.2px;
+}
+
+section .features-content {
+  flex: 1.5 1;
+}
+
+section .features-content ::ng-deep .feature-text {
+  padding-block-start: 0rem;
+}
+
+section .features-content ::ng-deep .feature-container {
+  margin-block-end: 2.25rem;
+}
+
+section .features-content ::ng-deep .feature-title h3 {
+  max-width: 175px;
+}
+
+.blur-one {
+  position: absolute;
+  z-index: 5;
+  background: var(--color-footer);
+  filter: blur(140px);
+  width: 38rem;
+  height: 58rem;
+  top: -20%;
+  left: -12%;
+}
+
+@media only screen and (max-width: 1120px) {
+  section > div.container {
+    flex-direction: column;
+  }
+  .features-title h2 {
+    max-width: none;
+  }
+  section .features-title {
+    margin-inline-end: 0;
+  }
+  section .features-content ::ng-deep .feature-container {
+    margin-block: 1.5rem;
+    margin-inline-start: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .features-title h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .features-title h4 {
+    margin-block-start: 2rem;
+  }
+  section .features-content ::ng-deep .feature-container {
+    margin-block: 1rem;
+  }
+  section .features-content ::ng-deep .feature-text {
+    font-size: 12px;
+    line-height: 20px;
+    text-wrap: balance;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section .features-content ::ng-deep .feature-container {
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  section .features-content ::ng-deep .feature-container {
+    margin-block: 1.5rem;
+  }
+  .features-content ::ng-deep .feature-title div {
+    margin-block-end: 0.5rem;
+}
+}

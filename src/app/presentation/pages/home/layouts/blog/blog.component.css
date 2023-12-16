@@ -1,0 +1,66 @@
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section h2 {
+  margin-block-end: 1rem;
+  font-family: var(--font-family);
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -4%;
+  font-weight: 700;
+  margin-block-end: 5rem;
+  white-space: pre-line;
+}
+
+section .articles {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+section .articles :nth-child(1) {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+section .articles :nth-child(2) {
+  grid-area: 1 / 2 / 2 / 3;
+}
+section .articles :nth-child(3) {
+  grid-area: 1 / 3 / 2 / 4;
+}
+section .articles :nth-child(4) {
+  grid-area: 2 / 2 / 3 / 3;
+}
+section .articles :nth-child(5) {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+@media screen and (max-width: 1250px) {
+  section .articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section .articles gpt-article {
+    max-width: 250px;
+    aspect-ratio: 3/5.5;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  section .articles {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  section .articles gpt-article {
+    grid-area: unset !important;
+  }
+}

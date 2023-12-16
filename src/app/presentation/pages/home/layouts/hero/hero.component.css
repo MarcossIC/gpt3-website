@@ -1,0 +1,217 @@
+section {
+  display: flex;
+  margin-block-end: 4rem;
+}
+
+section .home-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-inline-end: 5rem;
+}
+section h1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  line-height: 75px;
+  font-size: 62px;
+  letter-spacing: -0.04em;
+}
+
+section p {
+  font-family: var(--font-family);
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+
+  color: var(--color-text);
+  margin-block-start: 1.5rem;
+}
+
+section .home-input {
+  width: 100%;
+  margin: 2rem 0 1rem;
+  display: flex;
+}
+section .home-input input,
+section .home-input button {
+  width: 100%;
+  min-height: 50px;
+  font-family: var(--font-family);
+  color: #fff;
+  font-size: 20px;
+  line-height: 27px;
+  outline: none;
+}
+
+section .home-input input {
+  flex: 2;
+  border-radius: 5px, 0px, 0px, 5px;
+  background-color: var(--color-footer);
+  border: 2px solid var(--color-footer);
+  padding: 1rem;
+}
+
+section .home-input input:is(:active, :focus) {
+  outline: none;
+}
+section .home-input button {
+  flex: 0.6;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 1rem;
+  user-select: none;
+}
+
+section .home-people {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-block-start: 2rem;
+}
+
+section .home-people picture {
+  position: relative;
+  width: 181.79px;
+  height: 38px;
+}
+
+section .home-people p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 38px;
+  color: #fff;
+  margin: 0 0 0 1rem;
+  text-align: center;
+}
+
+section .home-banner {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+section .home-banner img {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  max-width: none;
+  width: 48%;
+  aspect-ratio: 1/1;
+}
+
+@media screen and (min-width: 2000px) {
+  section .home-banner img {
+    right: 8%;
+    width: 40%;
+    top: 8%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  section .home-banner img {
+    top: 4%;
+    right: 5%;
+    width: 43%;
+  }
+}
+
+@media screen and (max-width: 1475px) {
+  section h1 {
+    line-height: 65px;
+    font-size: 50px;
+  }
+  section .home-banner img {
+    top: 7%;
+    right: 4%;
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  section h1 {
+    line-height: 60px;
+    font-size: 41px;
+  }
+  section .home-banner img {
+    top: 13%;
+    right: 3%;
+    width: 51%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  section .home-banner img {
+    top: 17%;
+    width: 52%;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  section {
+    flex-direction: column;
+    margin-block-end: 0;
+    padding-block-end: 1rem;
+  }
+
+  section .home-container {
+    margin: 0 0 3rem;
+  }
+  section h1 {
+    line-height: 75px;
+    font-size: 62px;
+  }
+  section .home-banner img {
+    position: relative;
+    top: 0;
+    right: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  section p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  section .home-people {
+    flex-direction: column;
+  }
+  section .home-people p {
+    margin: 0;
+  }
+
+  section .home-input button,
+  section .home-input input {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  section h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  section .home-input button,
+  section .home-input input {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
