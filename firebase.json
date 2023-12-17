@@ -1,8 +1,11 @@
 {
   "hosting": {
-    "site": "gpt3-landing",
-    "public": "public/browser",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "public": "dist/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
         "source": "**",
@@ -11,5 +14,3 @@
     ]
   }
 }
-
-
