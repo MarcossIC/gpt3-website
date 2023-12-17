@@ -62,5 +62,24 @@ section .articles :nth-child(5) {
 
   section .articles gpt-article {
     grid-area: unset !important;
+    max-width: 450px;
+    aspect-ratio: 3/4;
+  }
+
+  section .articles ::ng-deep article img {
+    aspect-ratio: 5/3;
+  }
+
+  section .articles ::ng-deep article .article-content h3 {
+    margin-block-end: 6rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section .articles gpt-article {
+    aspect-ratio: 3/4;
+    display: flex;
+    max-width: max-content;
+    flex: 1 1 100%;
   }
 }

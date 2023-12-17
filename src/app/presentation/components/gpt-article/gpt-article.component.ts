@@ -26,7 +26,7 @@ import {
           <p>{{ date }}</p>
           <h3>{{ text }}</h3>
         </div>
-        <a>Read Full Article</a>
+        <a class=" hover:gradient-text">Read Full Article</a>
       </div>
     </article>
   `,
@@ -75,6 +75,12 @@ import {
       font-size: 13px;
       word-spacing: 1px;
       cursor: pointer;
+      opacity: .8;
+      transition-property: opacity, background, scale, letter-spacing;
+      transition-duration: .4s;
+      transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+
     }
     article picture {
       width: 100%;
@@ -96,6 +102,16 @@ import {
 
     article img:hover {
       transform: scale(1.15);
+    }
+    article .article-content a:hover {
+      opacity: 1;
+      background: var(--gradient-text);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: .2px;
+      scale: 1.02;
+      
     }
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
