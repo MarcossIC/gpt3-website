@@ -5,7 +5,7 @@ name: Deploy to Firebase Hosting on merge
 'on':
   push:
     branches:
-      - 'main'
+      - main
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
@@ -14,6 +14,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_S12_10_ANGULAR }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GPT3_LANDING }}'
           channelId: live
-          projectId: s12-10-angular
+          projectId: gpt3-landing

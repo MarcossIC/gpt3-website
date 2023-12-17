@@ -12,5 +12,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_S12_10_ANGULAR }}'
-          projectId: s12-10-angular
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GPT3_LANDING }}'
+          projectId: gpt3-landing
