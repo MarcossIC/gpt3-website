@@ -1,4 +1,6 @@
-# GPT-3 LADING PAGE
+<h1 align="center">GPT-3 Landing Page</h1>
+<img align="center" src="./assets/hero-screen.png" />
+
 ## :rocket: Demo
 You can visit the site at: [view website](https://marcosic.netlify.app/home/)
 
