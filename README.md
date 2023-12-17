@@ -1,31 +1,30 @@
-<<<<<<< HEAD
-# gpt3-website
-=======
-# Gpt3Website
+# GPT-3 LADING PAGE
+## :rocket: Demo
+You can visit the site at: [view website](https://marcosic.netlify.app/home/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.2.
+## :sparkles: Introduction
+This repository contains the source code for a landing page that focuses on presenting GPT-3 (fictional representation).
 
-## Development server
+The landing page was created as part of a "JavaScript Mastery" project on YouTube, based on a design crafted in Figma. Animation has been added, and the text has been enhanced to align with the theme of the site.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🛠 Design 
+The figma design I took as a reference was [URL](https://www.figma.com/file/lz9lLpFHMxHm2odnwM3R0z/gpt3?type=design&node-id=0-1&mode=design&t=Y2RJKX9EnjgOxyI2-0) here you can visit it to see how the original reference
 
-## Code scaffolding
+## 🛠 Stack
+The project is developed in Angular 16 and uses these technologies:
+<p user-select="none" align="left">
+   <a href="#" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=angular,ts,css,html,tailwind"/> </a>
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ℹ️ Development server
+In order to deploy a local version of the project you must:
+- Download the project from github
+- Run `npm install` at the root of the project
+- Run `ng s -o` for a dev server. Navigate to `http://localhost:4200/`.
+The application will automatically reload if you change any of the source files.
 
-## Build
-
+## ℹ️ Build
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
->>>>>>> master
+## 💪 Project status
+The project, being a simple landing page based on a figma design, is already finished, I liked the result and it was fun to do it.
