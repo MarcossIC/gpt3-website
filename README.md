@@ -2,7 +2,7 @@
 <img align="center" src="./assets/hero-screen.png" />
 
 ## :rocket: Demo
-You can visit the site at: [view website](https://marcosic.netlify.app/home/)
+You can visit the site at: [view website](https://gpt3-landing.web.app/)
 
 ## :sparkles: Introduction
 This repository contains the source code for a landing page that focuses on presenting GPT-3 (fictional representation).
