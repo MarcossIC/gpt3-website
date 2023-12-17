@@ -11,6 +11,7 @@ header p {
   line-height: 25px;
   direction: ltr;
   margin: 0 1rem;
+  user-select: none;
 }
 header p.link {
   opacity: 0.8;
@@ -73,7 +74,7 @@ header .buttons button {
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-
+  z-index: 200;
   text-align: end;
   background: var(--color-footer);
   padding: 2rem;
@@ -119,6 +120,18 @@ header nav.mobile {
   header .menu {
     display: flex;
   }
+  .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100dvw;
+      width: 100%;
+      min-height: 100dvw;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 100;
+      overflow: hidden;
+}
 }
 
 @media only screen and (min-width: 1200px) {

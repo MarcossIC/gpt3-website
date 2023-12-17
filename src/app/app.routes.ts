@@ -5,6 +5,7 @@ export const routes: Routes = [
   {
     title: 'GPT 3 - Home page',
     path: '',
-    component: HomeComponent
+    //component: HomeComponent
+    loadComponent: ()=>import("@pages/home/home.component").then( (c)=> c.HomeComponent),
   }
 ];

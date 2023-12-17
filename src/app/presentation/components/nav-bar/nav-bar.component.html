@@ -46,21 +46,21 @@
     <div class="menu-container scale-up-center">
       <div class="menu-links">
         <nav class="mobile">
-          <p class="link">
-            <a>Home</a>
-          </p>
-          <p class="link">
-            <a>What is GPT?</a>
-          </p>
-          <p class="link">
-            <a>Open AI</a>
-          </p>
-          <p class="link">
-            <a>Case Studies</a>
-          </p>
-          <p class="link">
-            <a>Library</a>
-          </p>
+      <p class="link">
+        <a href="#hero" (click)="close('#hero')">Home</a>
+      </p>
+      <p class="link">
+        <a href="#wgpt3" (click)="close('#wgpt3')">What is GPT?</a>
+      </p>
+      <p class="link">
+        <a href="#features" (click)="close('#features')">Open AI</a>
+      </p>
+      <p class="link">
+        <a href="#posibility" (click)="close('#posibility')">Case Studies</a>
+      </p>
+      <p class="link">
+        <a href="#blog" (click)="close('#blog')">Blog</a>
+      </p>
         </nav>
       </div>
       <div class="buttons mobile">
@@ -71,3 +71,7 @@
     }
   </div>
 </header>
+
+@if(toggleMenu){
+  <div class="overlay" (click)="toggleMenu = false"></div>
+}
