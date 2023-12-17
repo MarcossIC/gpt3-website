@@ -27,7 +27,7 @@ import { FooterComponent } from '@components/footer/footer.component';
     FooterComponent,
   ],
   template: `
-    <div class="home">
+    <div class="home" id="home">
       <div class="relative">
         <div class="z-10 relative">
           <nav-bar />
