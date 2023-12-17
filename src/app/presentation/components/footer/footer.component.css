@@ -57,7 +57,6 @@ footer .footer-heading button::before {
   transform: skewX(45deg);
   z-index: -1;
   transition: width 700ms;
-
 }
 
 footer .footer-heading button:hover {
@@ -83,7 +82,7 @@ footer .footer-middle {
 
 footer .footer-middle h4 {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 16.5px;
   font-weight: 700;
 }
@@ -97,7 +96,7 @@ footer .footer-middle .list li {
 }
 footer .footer-middle a {
   color: #fff;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 400;
   opacity: 0.8;
   transition: opacity 0.2s ease;
@@ -119,16 +118,18 @@ footer .footer-middle p {
   white-space: pre-line;
 }
 
-footer .footer-bottom {
+footer .footer-bottom small {
   margin-block-start: 2.5rem;
   text-align: center;
   width: 100%;
   color: #fff;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 15px;
   word-spacing: 1.2px;
   letter-spacing: 0.5px;
   font-weight: 500;
+  text-decoration: none;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 550px) {
@@ -170,7 +171,3 @@ footer .footer-bottom {
     text-align: center;
   }
 }
-
-
-
-
