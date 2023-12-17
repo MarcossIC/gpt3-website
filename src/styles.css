@@ -99,8 +99,13 @@ a {
 }
 
 .orange-button {
-  background-color: rgba(255, 72, 32, 1);
+  background-color: rgba(255, 72, 32, .9);
   border-radius: 0.315rem;
+  transition: background-color .2s ease;
+}
+
+.orange-button:hover {
+  background-color: rgb(253, 81, 42);
 }
 
 .scale-up-center {

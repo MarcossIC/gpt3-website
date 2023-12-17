@@ -53,6 +53,10 @@ section button {
   margin-inline-start: 1rem;
 }
 
+section button:hover {
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+}
+
 @media screen and (max-width: 750px) {
   section {
     flex-direction: column;

@@ -81,6 +81,7 @@ import {
       height: 100%;
       background: var(--color-bg);
     max-height: 350px;
+    overflow: hidden;
 
     }
 
@@ -89,6 +90,12 @@ import {
       height: 100%;
       object-fit: cover;
       border-top-left-radius: 2rem;
+      transition: transform .3s ease;
+      cursor: pointer;
+    }
+
+    article img:hover {
+      transform: scale(1.15);
     }
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,

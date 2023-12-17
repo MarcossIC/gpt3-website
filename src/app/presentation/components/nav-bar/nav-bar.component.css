@@ -23,6 +23,7 @@ header a,
 header button,
 header .logo {
   cursor: pointer;
+  z-index: 50;
 }
 
 header .links {
